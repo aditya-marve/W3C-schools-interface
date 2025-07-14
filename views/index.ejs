@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Tutorial | W3Schools Clone</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+
+    .navbar {
+      background-color: #282A35;
+      display: flex;
+      gap: 20px;
+      padding: 15px 40px;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .navbar a:first-child {
+      font-size: 24px;
+      color: #04AA6D;
+    }
+
+    .navbar a:hover {
+      color: #04AA6D;
+    }
+
+    .container {
+      display: flex;
+      min-height: calc(100vh - 60px - 60px); /* minus navbar and footer height */
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #f1f1f1;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h3 {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 10px;
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .sidebar a:hover {
+      background-color: #ddd;
+      color: #04AA6D;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      background-color: #fff;
+    }
+
+    .content h1 {
+      font-size: 2.5rem;
+      color: #282A35;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #282A35;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar">
+    <a href="/">W3C</a>
+    <a href="#">Tutorials</a>
+    <a href="#">References</a>
+    <a href="#">Exercises</a>
+    <a href="#">Videos</a>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Java Tutorial</h3>
+      <a href="/java/intro">Java Intro</a>
+      <a href="/java/datatypes">Data Types</a>
+      <a href="/java/variables">Variables</a>
+      <a href="/java/object">Object</a>
+      <a href="/java/classes">Classes</a>
+      <a href="/java/inheritance">Inheritance</a>
+      <a href="/java/polymorphism">Polymorphism</a>
+      <a href="/java/abstraction">Abstraction</a>
+      <a href="/java/encapsulation">Encapsulation</a>
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
+      <h1>Java Tutorial</h1>
+      <p>Welcome to the Java tutorial section of our W3Schools Clone! Here you will learn everything about Java programming — from basics to advanced concepts.</p>
+      <p>Click on a topic on the left to get started.</p>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>W3Schools Clone - © 2025</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Objects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: rgb(7, 49, 7);
+    }
+    ul {
+      margin-left: 20px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Java Objects</h1>
+
+  <p>An object is an instance of a class. Objects have state (variables) and behavior (methods).</p>
+  <p>You create an object from a class using the <code>new</code> keyword.</p>
+
+  <p><strong>Working with Objects:</strong></p>
+  <ul>
+    <li>Define a class</li>
+    <li>Create an object of that class using <code>new</code></li>
+    <li>Access fields and methods with dot (<code>.</code>) operator</li>
+  </ul>
+
+  <p><strong>Simple Java Code:</strong></p>
+  <pre><code>
+class Car {
+    String color = "Red";
+    void start() {
+        System.out.println("Car is starting...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        System.out.println("Car color: " + myCar.color);
+        myCar.start();
+    }
+}
+  </code></pre>
+
+</body>
+</html>

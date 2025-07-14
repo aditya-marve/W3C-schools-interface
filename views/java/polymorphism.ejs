@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Polymorphism</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: rgb(7, 49, 7);
+    }
+    ul {
+      margin-left: 20px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Java Polymorphism</h1>
+
+  <p>Polymorphism means "many forms". In Java, it allows objects to take many forms through method overriding or method overloading.</p>
+
+  <p><strong>Types of Polymorphism:</strong></p>
+  <ul>
+    <li><strong>Compile-time Polymorphism</strong> (Method Overloading)</li>
+    <li><strong>Run-time Polymorphism</strong> (Method Overriding)</li>
+  </ul>
+
+  <p><strong>Simple Java Code:</strong></p>
+  <pre><code>
+class Animal {
+    void sound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Cat(); // Runtime polymorphism
+        a.sound();
+    }
+}
+  </code></pre>
+
+</body>
+</html>

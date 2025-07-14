@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Abstraction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: rgb(7, 49, 7);
+    }
+    ul {
+      margin-left: 20px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Java Abstraction</h1>
+
+  <p>Abstraction is the process of hiding the implementation details and showing only the essential features of an object.</p>
+  <p>In Java, abstraction is achieved using abstract classes and interfaces.</p>
+
+  <p><strong>Key Points:</strong></p>
+  <ul>
+    <li>Abstract classes can have both abstract and regular methods</li>
+    <li>Interfaces can only have abstract methods (until Java 8)</li>
+    <li>Cannot instantiate abstract classes directly</li>
+  </ul>
+
+  <p><strong>Simple Java Code:</strong></p>
+  <pre><code>
+abstract class Shape {
+    abstract void draw();
+}
+
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing a Circle");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Shape s = new Circle();
+        s.draw();
+    }
+}
+  </code></pre>
+
+</body>
+</html>
